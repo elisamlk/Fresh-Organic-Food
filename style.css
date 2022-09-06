@@ -4,13 +4,17 @@ body {
 }
 
 header {
-  background-image: url("img/header.jpg");
+  background-image: url("img/banner.jpg");
   height: 100vh;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  text-align: center;
   object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
 }
 
 .logo {
@@ -34,6 +38,7 @@ nav ul {
   -moz-transition: max-height 0.4s;
   -o-transition: max-height 0.4s;
   transition: max-height 0.4s;
+ 
 }
 
 nav ul li {
@@ -42,14 +47,18 @@ nav ul li {
   font-family: "Poppins", sans-serif;
 }
 
+nav{
+    width:100%;
+}
+
 .handle {
   width: 100%;
-  background: #005c48;
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: left;
   box-sizing: border-box;
   padding: 15px 10px;
   cursor: pointer;
-  color: white;
+  color: black;
   display: none;
 }
 
@@ -58,30 +67,52 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 10em;
+  margin: 0;
+  color: white;
+}
+
+h3 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+button {
+  background-color: #9fc131;
+  padding: 1.5em 2em 1.5em 2em;
+  border-radius: 20em;
+  border: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2em;
+  
+}
+
 @media screen and (max-width: 768px) {
   nav ul {
     max-height: 0;
   }
-
   .showing {
     max-height: 100vh;
   }
-
   nav ul li {
     box-sizing: border-box;
     width: 100%;
-    /* padding: 15px; */
     text-align: center;
   }
-
   .handle {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 1.5em;
   }
-
   .logo {
     display: none;
+  }
+  h2 {
+    font-size: 4em;
   }
 }
