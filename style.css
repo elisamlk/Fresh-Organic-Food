@@ -142,6 +142,25 @@ li {
   align-items: center;
 }
 
+.food-img {
+  width: 15em;
+  height: 15em;
+  object-fit: cover;
+}
+
+.food-display {
+  padding: 0 4em 0 4em;
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   nav ul {
     max-height: 0;
@@ -173,7 +192,7 @@ li {
   .category {
     padding: 0;
   }
-  .products-list{
+  .products-list {
     display: none;
   }
 }
