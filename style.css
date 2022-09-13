@@ -160,6 +160,9 @@ p {
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
+.fa-xmark{
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
   nav ul {
