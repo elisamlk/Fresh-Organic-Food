@@ -160,8 +160,13 @@ p {
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
-.fa-xmark{
-    display: none;
+.fa-xmark {
+  display: none;
+}
+
+footer {
+  background-color: #f1f1f1;
+  display: flex;
 }
 
 @media screen and (max-width: 768px) {
