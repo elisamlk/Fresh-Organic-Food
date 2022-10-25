@@ -88,6 +88,10 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
+.more {
+  margin-bottom: 2em;
+}
+
 .category {
   display: flex;
   flex-wrap: wrap;
@@ -190,24 +194,43 @@ input {
   margin-right: -4em;
 }
 
+.blog {
+  padding: 2em;
+}
+
 .content {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.article {
+  width: 40%;
 }
 
 .article-img {
   object-fit: cover;
+  width: 40%;
 }
 
 h5,
 h6,
 .article-text {
   margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
 }
 
 footer {
   background-color: #f1f1f1;
   display: flex;
   justify-content: space-between;
+}
+
+footer li{
+  list-style: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -243,5 +266,19 @@ footer {
   }
   .products-list {
     display: none;
+  }
+  .content {
+    flex-direction: column;
+    padding: 0;
+  }
+  .article {
+    width: 100%;
+    text-align: center;
+  }
+  .article-img {
+    width: 100%;
+  }
+  footer {
+    flex-wrap: wrap;
   }
 }
